@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Trivia
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Trivia</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle> <h2> <b> Question...! </b> </h2> </ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-text> <p> ¿Cuáles son dos de los tres lenguajes que usa Angular?  </p> </ion-text>
+      </ion-card-content>
+    </ion-card>
+   </div>
+
+      <ion-button color="danger" expand="block" fill="outline" id="correcto" (click)="presentAlert()">
+        <ion-text color="black" font-size="x-small">
+          HTML, CSS
+        </ion-text>
+       </ion-button>
+      
+      <ion-button color="danger" expand="block" fill="outline" id="incorrecto1" (click)="presentAlert2()">
+        <ion-text color="black" font-size="x-small">
+          JS, RUBY
+        </ion-text>
+       </ion-button>
+ 
+      <ion-button color="danger" expand="block" fill="outline" id="incorrecto2" (click)="presentAlert2()">
+        <ion-text color="black" font-size="x-small">
+          RUBY, PYTHON
+        </ion-text>
+       </ion-button>
+     
+  </ion-content>
+
+</ion-content>

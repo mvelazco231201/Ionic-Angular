@@ -1,20 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding ion-text-center"> 
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <div class="logo">
+        <img src="https://www.bing.com/images/search?view=detailV2&ccid=HNbPPXZA&id=E18C18CCBFAB4F3D3176DAB8DB0D428A0BCCAE2F&thid=OIP.HNbPPXZAWoW5o1JBHmEtKAHaD0&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.1cd6cf3d76405a85b9a352411e612d28%3frik%3dL67MC4pCDdu42g%26riu%3dhttp%253a%252f%252fwww.adrants.com%252fimages%252ffor_dummies_plain.png%26ehk%3dLA%252fX8oBxlKfih%252bKAMlHfRPRPTVebfXyh5OOglPBcAq0%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=715&expw=1386&q=logo+dummie&simid=607995123907167209&FORM=IRPRST&ck=898518145CD6321309415F7356139B1D&selectedIndex=11">
+    </div>
+
+    <div class="form">
+        <ion-item lines='none'>
+            <ion-input class="user" [(ngModel)]='name' type="name" placeholder="Enter name"></ion-input>
+        </ion-item>
+            <ion-button (submit)="onSubmit($event)" color='dark' expand='block' routerLink = '/trivia' >Login</ion-button>
+    </div>
+            <ion-button fill='clear'>Good luck! </ion-button>     
 </ion-content>
+  
+ 
+
